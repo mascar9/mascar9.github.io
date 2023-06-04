@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+
+
+
+    <div class="sidebar">
+        <ul>
+            <li><a href="#main-content"><img src="images/home_outlined.svg" alt="Home">Home</a></li>
+            <li><a href="#journey-section"><img src="images/route_outlined.svg" alt="Journey">Journey</a></li>
+            <li><a href="#projects-section"><img src="images/icons8-project.png" alt="Projects">Projects</a></li>
+            <li><a href="#contacts_section"><img src="images/contacts_outlined.svg" alt="Contacts">Contacts</a></li>
+        </ul>
+        
+        <div class="song_image">
+            <img src="images/lukrembo-biscuit-img.png"  alt="song_image" id="song_img">
+        </div>
+    </div>
+
+    <section class="main-content" id="main-content">
+
+            <!-- Your main content here -->
+            <div class="intro_text">
+                <h1 class="name_text">Pedro Mascarenhas</h1>
+                <h2 class="title_text">I'm a computer science student at NOVA School of Science and Technology, located in Lisbon, Portugal.<br>
+                    <br>
+                    Welcome to my Spotify themed portfolio!<br><br>
+                    Feel free to play any genre of music here on the right.
+                </h2>
+
+
+            </div>
+        <div class="image-container">
+            <img src="images/img_teste.png" alt="Your Image">
+        </div>
+
+        <div class="genre-container">
+            <div class="genre-square hip-hop" data-genre="hip-hop">
+                <h2>Hip Hop</h2>
+                <button class="genre-button" id="hiphopButton"><img src="images/play_filled.svg" alt="Button Image"></button>
+            </div>
+
+            <div class="genre-square pop" data-genre="pop">
+                <h2>Pop</h2>
+                <button class="genre-button" id="popButton"><img src="images/play_filled.svg" alt="Button Image"></button>
+            </div>
+
+            <div class="genre-square rock" data-genre="rock">
+                <h2>Rock</h2>
+                <button class="genre-button" id="rockButton"><img src="images/play_filled.svg" alt="Button Image"></button>
+            </div>
+            <div class="genre-square chill" data-genre="chill">
+                <h2>Chill</h2>
+                <button class="genre-button" id="chillButton"><img src="images/play_filled.svg" alt="Button Image"></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="journey-section">
+
+        <div class="container">
+            <h2 class="section-title">My Journey</h2>
+            <div class="content">
+                <div class="journey-item">
+                    <h6>Discovered Coding</h6>
+                    <p>In high school I wrote my first Hello World in a FreeCodeCamp tutorial</p>
+                </div>
+                <div class="journey-item">
+                    <h6>University</h6>
+                    <p>Joined NOVA university in computer science</p>
+                </div>
+                <div class="journey-item">
+                    <h6>Personal Projects</h6>
+                    <p>Started learning by myself how to develop my own android apps</p>
+                </div>
+                <div class="journey-item">
+                    <h6>Future Goals</h6>
+                    <p>I would love to work as a software engineer at a tech company where I can participate in interesting projects and where I can learn new technologies </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects-section">
+
+        <div class="projects_div">
+            <h2 class="project-title">My Projects</h2>
+
+            <div class="projects-container">
+                
+                    <div class="project-item">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="project-image" >
+                                    <img src="images/project1.jpg" alt="Project 1">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>DRINK UP</h1>
+                                    <p class="flip_back_text">
+                                        This is a fun game that you can play with a group of friends on any occasion. All the players' names are entered, and each round features an enjoyable mini-game. The twist is that the losers of each round have to take a DrinkUp.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="project-name">DrinkUp</h3>
+                        <p class="project-description">Fun game for night out with friends</p>
+                    </div>
+
+
+                <div class="project-item">
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="project-image">
+                                <img src="images/project2.jpg" alt="Project 2">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>WORDLE</h1>
+                                <p class="flip_back_text">
+                                    This game is very similar to the famous Wordle game, but with a 1v1 twist. One player enters a 5-letter word, and the other player has to guess it.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="project-name">Wordle</h3>
+                    <p class="project-description">Wordle but it's in a 1v1</p>
+
+                </div>
+
+                <div class="project-item">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="project-image">
+                                <img src="images/project3.jpg" alt="Project 3">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>COOK MATE</h1>
+                                <p class="flip_back_text">
+                                    This is a recipe app, where I can create a recipe by indicating ingredients, description, servings, category, duration and other details. There's also the option to search new ones on an API, it has a built-in shopping cart and the option to share recipes with friends.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="project-name">CookMate</h3>
+                    <p class="project-description">My own recipe app</p>
+                </div>
+
+
+                <div class="project-item">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="project-image">
+                                <img src="images/project3.jpg" alt="Project 4">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>WORDLE</h1>
+                                <p class="flip_back_text">
+                                    This game is very similar to the famous Wordle game, but with a 1v1 twist. One player enters a 5-letter word, and the other player has to guess it.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="project-name">CookMate</h3>
+                    <p class="project-description">My own recipe app</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts_section">
+        <h6 class="contacts_title">Contact Me</h6>
+        <div class="contacts_container">
+            <div class="contacts_left" id="contacts_left">
+                <p class="contacts_text">Have a question or want to discuss a project? Don't hesitate to get in touch.</p>
+
+                <div class="cv-download-container">
+                    <a href="images/CV.pdf" download>
+                        <button type="button" class="cv-download-button">Download CV</button>
+                    </a>
+                </div>
+
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/-pedro-mascarenhas/" class="social-icon"><img src="images/icons8-linkedin.svg"  alt="" style="width: 38px; height: 38px;"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://open.spotify.com/user/mascar_9?si=1c83463a31c54a66" class="social-icon"><img src="images/icons8-spotify.svg"  alt="" style="width: 38px; height: 38px;"><i class="fab fa-spotify"></i></a>
+                    <a href="https://www.instagram.com/pedro_mascarenhas9/?hl=en" class="social-icon"><img src="images/icons8-instagram.svg"  alt="" style="width: 38px; height: 38px;"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="contacts_right" id="contacts_right">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="media-player">
+
+
+        <div class="media-player-left">
+                <h3 class="song_title" id="song_title"> My Portfolio</h3>
+                <h4 class="song_artist" id="song_artist"> Pedro Mascarenhas</h4>
+        </div>
+
+        <div class="media-player-center">
+            <button class="prev-button">
+                <img src="images/outline_skip_previous_white_36dp.png" alt="Button Image">
+            </button>
+
+            <button type="button" class="play-button">
+                <img id="playIcon" src="images/outline_play_circle_white_36dp.png" alt="Button Image">
+                <img id="pauseIcon" src="images/outline_pause_circle_white_36dp.png" alt="Button Image" style="display: none;">
+            </button>
+
+            <button class="next-button">
+                <img src="images/outline_skip_next_white_36dp.png" alt="Button Image">
+            </button>
+        </div>
+
+        <div class="media-player-right">
+            <button type="button" class="volume_btn" >
+                <img id="soundON" src="images/volume_up_icon.svg" alt="Button Image">
+                <img id="soundOFF" src="images/volume_off_icon.svg" alt="Button Image" style="display: none;">
+            </button>
+            <label>
+                <input type="range" class="media-volume-bar" min="0" max="100" value="50">
+            </label>
+
+        </div>
+
+
+
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>

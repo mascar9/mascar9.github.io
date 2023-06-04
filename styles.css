@@ -1,0 +1,675 @@
+:root {
+    --black: #191414;
+    --light_black: #282020;
+    --light_black_kinda: #1c1717;
+    --white: #f0f0f0;
+    --green: #1DB954;
+    --light_grey: #D3D3D3;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin-left: 2vh;
+    padding: 0;
+}
+
+.sidebar li a {
+    display: block;
+    color: var(--light_grey);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+}
+.sidebar li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sidebar li a img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.sidebar ul li:hover a {
+    color: var(--white); /* Change the text color when hovered */
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 14%;
+    height: 100%;
+    background-color: var(--black);
+    overflow-x: hidden;
+    padding-top: 20px;
+
+}
+
+.song_image {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    height: auto;
+}
+
+.song_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-content {
+    padding: 0 0 0 0;
+    height: 100vh;
+    width: 86%;
+    margin-left: 14%;
+    background: rgb(28,23,23);
+    background: linear-gradient(0deg, #1c1717 70%, #1c1717);
+
+    transition: background 0.3s ease-in-out;
+}
+
+#journey-content {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    background-color: #1c1717;
+    height: 100vh;
+    width: 100%;
+}
+
+.media-player {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: var(--light_black);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.name_text {
+    margin-top: 34px;
+    font-size: 5rem;
+    color: var(--green);
+    margin-bottom: 0;
+
+
+    animation: 2s anim-lineUp ease-out ;
+}@keyframes anim-lineUp {
+     0% {
+         opacity: 0;
+         transform: translateY(50%);
+     }
+     20% {
+         opacity: 0;
+     }
+     50% {
+         opacity: 1;
+         transform: translateY(0%);
+     }
+     100% {
+         opacity: 1;
+         transform: translateY(0%);
+     }
+ }
+
+.title_text{
+    margin-top: 10vh;
+    width: 70vh;
+    font-size: 2rem;
+    margin-bottom: 0;
+    color:var(--white);
+}
+
+
+.intro_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color:var(--white);
+    position: absolute;
+    left: 20%;
+}
+
+.myImage {
+    max-width: 100%;
+    left: 20%;
+    top: 30%;
+
+}
+
+.media-player-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    width:100px;
+}
+.media-player-right {
+    margin-top: 20px;
+    display: flex;
+    align-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.media-player-center button {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    outline: none;
+    margin-top: 10%;
+    margin-right: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.media-player-right label{
+    padding: 0;
+    margin-bottom: 10%;
+    margin-right: 100%;
+}
+
+.image-container {
+
+    position: absolute;
+    top:25vh;
+    right: 30vh;
+    margin-right: 50px;
+    background: linear-gradient(45deg, var(--light_black_kinda) 45%, var(--green));
+    border: 2px solid; /* Add a transparent border */
+    width: 350px;
+    height: 350px;
+    border-color: var(--green);
+    border-radius: 15%;
+}
+
+.image-container img {
+    width: 480px; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+    right: 20px;
+}
+
+.genre-container {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    bottom: 6vh; /* Adjust the bottom value as needed */
+    margin-right: 50px;
+    right: 0;
+
+
+}
+
+.genre-square {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.genre-square h2 {
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+.genre-square button {
+    margin-top: auto;
+}
+
+.genre-square:hover .genre-button {
+    transform: scale(1.3);
+}
+
+.genre-square:hover ~.main-content {
+    background: linear-gradient(180deg, #B22222, #1c1717);
+    -webkit-transition:color 4s ease;
+    -moz-transition:color 4s ease;
+    -o-transition:color 4s ease;
+    transition:color 4s ease;
+}
+
+.genre-button{
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    outline: none;
+    transition: transform 0.3s ease;
+    cursor: auto;
+}
+
+.genre-title {
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+.hip-hop {
+    background-color: #B22222; /* Red background color for Hip Hop */
+}
+
+.pop {
+    background-color: #FFA500; /* Green background color for Pop */
+}
+
+.rock {
+    background-color: #2E8B57; /* Blue background color for Rock */
+}
+.chill {
+    background-color: #6A5ACD; /* Blue background color for Rock */
+}
+
+.song_artist{
+    font-size: small;
+    color: #808080;
+    margin-top: 0.6em;
+}
+
+.song_title{
+    color: var(--white);
+    font-size: medium;
+    margin-bottom: 0.6em;
+}
+
+.media-player-left {
+    left: 3vh;
+    text-align: left;
+    margin-left: 15px;
+}
+
+
+#journey-section {
+    background-color: #1c1717;
+    color: #fff;
+    padding: 50px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    left: 13vh;
+    padding-bottom: 5vh;
+    text-align: center;
+
+    background: var(--light_black);
+    border-radius: 15px;
+
+    overflow: hidden;
+    border: 2px solid; /* Add a transparent border */
+    transition: border-color 0.3s ease;
+    border-color: var(--green) ;
+}
+
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.journey-item {
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+h6 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#projects-section {
+    background-color: #1c1717;
+    padding: 50px;
+
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Display two columns */
+    grid-auto-rows: minmax(300px, auto); /* Set the minimum row height to 300px, auto for dynamic height */
+    grid-gap: 20px; /* Adjust the gap between grid items */
+
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 5vh;
+    text-align: center;
+    position: relative;
+    left: 4vh;
+
+}
+
+.project-item {
+    background-color: var(--light_black);
+    padding: 20px;
+    width: 300px;
+    height: 550px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align items vertically */
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid transparent; /* Add a transparent border */
+    transition: border-color 0.3s ease;
+
+
+}
+
+.project-item:hover {
+    border-color: var(--green); /* Change the border color on hover */
+}
+
+
+.project-item:before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    z-index: -1;
+    background: linear-gradient(
+            45deg,
+            transparent 5%,
+            rgb(255, 215, 137) 50%,
+            transparent 99%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Add a transition effect */
+}
+
+.project-item:hover:before {
+    opacity: 1;
+}
+
+.project-item img {
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container height */
+    object-fit: contain;
+    border-radius: 10px;/* Preserve aspect ratio and fit the image within the container */
+    transition: transform 0.6s ease;
+}
+
+.project-image {
+    width: auto;
+    height: 430px; /* Adjust the height as per your preference */
+    margin-bottom: 15px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.6s ease;
+}
+
+.project-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: auto;
+    color: var(--green);
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--white);
+}
+
+
+.projects_div {
+
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    left: 13vh;
+    padding-bottom: 5vh;
+    text-align: center;
+}
+
+.project-title {
+    color: var(--white);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 70px;
+}
+
+.contacts_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--white);
+    position: relative;
+    left: 13vh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 20vh;
+
+}
+
+.contacts_left,
+.contacts_right {
+    width:400px;
+    height: 400px;
+    background-color: var(--light_black);
+    border-radius: 15px;
+    border: 2px solid var(--green);
+}
+
+.contacts_left {
+margin-right: 40px;
+
+}
+
+.contacts_right {
+margin-left: 40px;
+
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 35px;
+
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+#contacts_section {
+    padding: 50px;
+    background-color: var(--light_black_kinda);
+
+}
+
+.contacts_title {
+    color: var(--white);
+    text-align: center;
+    font-size: 2.5rem;
+    position: relative;
+    left: 13vh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+
+    align-items: flex-end;
+    height: 200px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.social-icon i {
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover i {
+    color: #1DB954; /* Change the color on hover */
+}
+
+.contacts_text {
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.cv-download-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cv-download-button {
+    padding: 10px 20px;
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.volume_btn {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 10%;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.volume_btn img {
+    width: 30px; /* Adjust the width */
+    height: 30px; /* Adjust the height */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+.flip-card-back {
+    background-color: var(--black);
+    color: var(--white);
+    transform: rotateY(180deg);
+    border-radius: 10px;
+
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 280px;
+    height: 430px;
+    perspective: 1000px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.project-image, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip_back_text {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
